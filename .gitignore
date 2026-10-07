@@ -1,0 +1,9 @@
+node_modules/
+config/config.json
+config/certs/
+data/
+data-archive/
+logs/
+installers/
+desktop/bin/
+desktop/obj/
