@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set your password - Mike's EZ Standup</title>
+<link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth">
+    <div class="brand"><img src="/img/logo.svg" alt=""><span>Mike's EZ Standup</span></div>
+    <section class="panel" id="panel">
+      <h1 id="title">Choose a new password</h1>
+      <p class="muted" id="intro">Checking your link...</p>
+      <form id="reset-form" class="hidden" novalidate>
+        <div class="field"><label for="pw">New password (at least 8 characters)</label><input type="password" id="pw" autocomplete="new-password" required></div>
+        <div class="field"><label for="pw2">Confirm password</label><input type="password" id="pw2" autocomplete="new-password" required></div>
+        <p class="notice error hidden" id="err" role="alert"></p>
+        <button class="btn primary block" type="submit" id="save">Save password and sign in</button>
+      </form>
+      <div class="auth-links"><a href="/">Back to sign in</a></div>
+    </section>
+  </div>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/reset.js"></script>
+</body>
+</html>

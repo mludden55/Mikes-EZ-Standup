@@ -1,0 +1,16 @@
+# systemd unit for Mike's EZ Standup. Edit WorkingDirectory and User, then:
+#   sudo cp install/mikes-ez-standup.service /etc/systemd/system/
+#   sudo systemctl enable --now mikes-ez-standup
+[Unit]
+Description=Mike's EZ Standup
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/mikes-ez-standup
+ExecStart=/usr/bin/env node server/server.js
+Restart=on-failure
+User=standup
+
+[Install]
+WantedBy=multi-user.target

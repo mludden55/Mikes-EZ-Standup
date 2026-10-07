@@ -1,0 +1,18 @@
+{
+  "name": "mikes-ez-standup",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Mike's EZ Standup - voice and text daily standups for software teams, installed on your own network.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "setup": "node install/install-server.js",
+    "enable-https": "node install/enable-https.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "nodemailer": "^10.0.15",
+    "selfsigned": "^5.5.0"
+  },
+  "license": "MIT"
+}

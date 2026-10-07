@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in - Mike's EZ Standup</title>
+<link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest-worker.webmanifest">
+<meta name="theme-color" content="#0e6170">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth">
+    <div class="brand"><img src="/img/logo.svg" alt=""><span>Mike's EZ Standup</span></div>
+
+    <section class="panel" id="login-panel">
+      <h1>Sign in</h1>
+      <p class="muted">Use your work email. You'll land in the Worker or Admin portal automatically.</p>
+      <form id="login-form" method="post" action="/" novalidate>
+        <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="username" required></div>
+        <div class="field"><label for="password">Password</label><input type="password" id="password" name="password" autocomplete="current-password" required></div>
+        <label class="check" style="margin:-.25rem 0 1rem"><input type="checkbox" id="remember" checked> Keep me signed in</label>
+        <p class="notice error hidden" id="login-error" role="alert"></p>
+        <button class="btn primary block" type="submit" id="login-btn">Sign in</button>
+      </form>
+      <div class="auth-links"><a href="#" id="show-forgot">Forgot password?</a><a href="/downloads" class="desktop-hide">Install on this computer</a></div>
+      <p class="small muted hidden desktop-hide" id="cert-hint" style="margin:.75rem 0 0">Browser says "Not secure"? <a href="/downloads#cert-panel">Trust this server</a></p>
+    </section>
+
+    <section class="panel hidden" id="forgot-panel">
+      <h1>Reset your password</h1>
+      <p class="muted">Enter your work email and we'll send you a link to choose a new password.</p>
+      <form id="forgot-form" novalidate>
+        <div class="field"><label for="forgot-email">Email</label><input type="email" id="forgot-email" autocomplete="username" required></div>
+        <p class="notice hidden" id="forgot-msg" role="status"></p>
+        <button class="btn primary block" type="submit" id="forgot-btn">Send reset link</button>
+      </form>
+      <div class="auth-links"><a href="#" id="show-login">Back to sign in</a></div>
+    </section>
+  </div>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "Mike's EZ Standup Admin",
+  "short_name": "Standup Admin",
+  "start_url": "/admin",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#e9edf1",
+  "theme_color": "#0e6170",
+  "icons": [{ "src": "/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

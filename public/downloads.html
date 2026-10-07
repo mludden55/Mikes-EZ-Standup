@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install - Mike's EZ Standup</title>
+<link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><img src="/img/logo.svg" alt=""><span>Mike's EZ Standup</span></a></div></header>
+<main>
+  <h1>Install on this computer</h1>
+  <p class="muted">Each installer adds a desktop shortcut that opens the right portal. Workers need only the Worker installer.</p>
+  <section class="panel" id="desktop-panel">
+    <h2>Windows desktop app (recommended)</h2>
+    <p class="muted">Its own window, a tray icon, and notifications when a standup update or meeting is due. For workers and admins on Windows 10 or 11.</p>
+    <ol class="small">
+      <li>Download the zip below, right-click it and choose <strong>Extract All</strong>.</li>
+      <li>Double-click <strong>Install-Desktop-Windows.bat</strong> in the extracted folder.</li>
+      <li>If Windows says "Windows protected your PC", choose <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+    </ol>
+    <ul class="list" id="desktop"></ul>
+  </section>
+  <section class="panel hidden" id="cert-panel">
+    <h2>Seeing "Not secure" in your browser?</h2>
+    <p class="muted">This server uses its own certificate. Each computer that uses the app in a browser trusts it once. (Not needed for the desktop app.)</p>
+    <ol class="small">
+      <li><strong>Windows:</strong> download <strong>Trust-Certificate-Windows.bat</strong>, double-click it, and choose <strong>Yes</strong> at the security warning. No administrator rights needed.</li>
+      <li>Close <strong>all</strong> browser windows, then open the app again.</li>
+    </ol>
+    <p class="small muted">macOS, Firefox and other details: see README.txt below.</p>
+    <ul class="list" id="certificate"></ul>
+  </section>
+  <h2 style="margin-top:1.5rem">Browser shortcuts</h2>
+  <div class="grid-2">
+    <section class="panel"><h2>Worker</h2><p class="muted">Send your daily updates and answer requests.</p><ul class="list" id="worker"></ul></section>
+    <section class="panel"><h2>Administrator</h2><p class="muted">Reports, requests, schedules, teams and admins.</p><ul class="list" id="admin"></ul></section>
+  </div>
+  <section class="panel">
+    <h2>No installer needed</h2>
+    <p>Open the portal in Chrome or Edge and choose <strong>Install app</strong> from the address bar or browser menu. On a phone, use <strong>Add to Home Screen</strong>.</p>
+    <div class="btn-row"><a class="btn" href="/worker">Open Worker Portal</a><a class="btn" href="/admin">Open Admin Portal</a></div>
+  </section>
+</main>
+<script src="/js/common.js"></script>
+<script src="/js/downloads.js"></script>
+</body>
+</html>
