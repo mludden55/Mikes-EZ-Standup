@@ -5,7 +5,7 @@ Daily standups for software teams, by text, voice or video.
 You install it once, on one computer on your network (the **server**). Everyone else uses it
 from their own computer, with nothing to install unless they want to.
 
-Mike's EZ Standup is free. If it helps your team, please [support its development](YOUR-STRIPE-LINK).
+Mike's EZ Standup is free. If it helps your team, please [support its development](https://buy.stripe.com/4gM3cw7xs3wIeeS8x4fQI00).
 
 Questions, comments or suggestions? Email me at michaeldludden@gmail.com, or
 [open an issue](../../issues) here on GitHub.
