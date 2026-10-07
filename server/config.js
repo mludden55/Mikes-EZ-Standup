@@ -9,7 +9,7 @@ const VERSION = '1.2.0';
 // Donation page shown as "support its development" in the app's footer, in every copy you
 // distribute. Paste your Stripe Payment Link here, e.g. 'https://donate.stripe.com/abc123'.
 // (An installation can override it with "donationUrl" in its config/config.json.)
-const DONATION_URL = '';
+const DONATION_URL = 'https://buy.stripe.com/4gM3cw7xs3wIeeS8x4fQI00';
 
 const paths = {
   ROOT,
