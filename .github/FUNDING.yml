@@ -1,0 +1,3 @@
+# Shows a "Sponsor" button on the GitHub repository page.
+# Replace YOUR-STRIPE-LINK with your Stripe Payment Link (keep the quotes).
+custom: ["https://buy.stripe.com/4gM3cw7xs3wIeeS8x4fQI00"]
